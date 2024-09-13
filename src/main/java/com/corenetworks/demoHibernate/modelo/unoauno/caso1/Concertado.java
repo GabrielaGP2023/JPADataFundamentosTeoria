@@ -1,4 +1,4 @@
-package com.corenetworks.demoHibernate.modelo;
+package com.corenetworks.demoHibernate.modelo.unoauno.caso1;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

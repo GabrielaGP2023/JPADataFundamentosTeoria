@@ -1,4 +1,4 @@
-package com.corenetworks.demoHibernate.modelo;
+package com.corenetworks.demoHibernate.modelo.eneauno.demo;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -20,8 +20,10 @@ public class Empleado {
     private String nombre;
     @Column(nullable = false)
     private int edad;
+
     @ManyToOne
-    @JoinColumn(name="id_departamento", nullable = false, foreignKey = @ForeignKey(name = "FK_empleados_departamentos"))
+    @JoinColumn(name="id_departamento", nullable = false,
+            foreignKey = @ForeignKey(name = "FK_empleados_departamentos"))
     private Departamento d1;
 
 }
